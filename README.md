@@ -5,9 +5,9 @@ Build18 2017 project
 ```
 adb shell "am start -a android.media.action.IMAGE_CAPTURE"
 sleep 1
-input tap 400 850
+adb shell "input tap 400 850"
 sleep 1
-input tap 400 850
+adb shell "input tap 400 850"
 ```
 
 ## Video capture
