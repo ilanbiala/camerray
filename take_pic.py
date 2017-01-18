@@ -1,21 +1,21 @@
 import subprocess
 
 def captureImage():
-    subprocess.call(['adb shell "am start -a android.media.action.IMAGE_CAPTURE"'])
-    subprocess.call(['sleep 1'])
-    subprocess.call(['adb shell "input tap 400 850"'])
-    subprocess.call(['sleep 1'])
-    subprocess.call(['adb shell "input tap 400 850"'])
+    subprocess.run('adb shell "am start -a android.media.action.IMAGE_CAPTURE"', shell=True)
+    subprocess.run('sleep 1', shell=True)
+    subprocess.run('adb shell "input tap 400 850"', shell=True)
+    subprocess.run('sleep 1', shell=True)
+    subprocess.run('adb shell "input tap 400 850"', shell=True)
     return True
     
 def captureVideo(seconds):
-    subprocess.call(['adb shell "am start -a android.media.action.VIDEO_CAPTURE"'])
-    subprocess.call(['sleep 1'])
-    subprocess.call(['adb shell "input tap 475 825"'])
-    subprocess.call(['sleep %s' % seconds])
-    subprocess.call(['adb shell "input tap 475 825"'])
-    subprocess.call(['sleep 1'])
-    subprocess.call(['adb shell "input tap 475 825"'])
+    subprocess.run('adb shell "am start -a android.media.action.VIDEO_CAPTURE"', shell=True)
+    subprocess.run('sleep 1', shell=True)
+    subprocess.run('adb shell "input tap 475 825"', shell=True)
+    subprocess.run('sleep %s' % seconds, shell=True)
+    subprocess.run('adb shell "input tap 475 825"', shell=True)
+    subprocess.run('sleep 1', shell=True)
+    subprocess.run('adb shell "input tap 475 825"', shell=True)
     
     
 def moveFile(filename):
