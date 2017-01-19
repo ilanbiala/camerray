@@ -20,3 +20,9 @@ adb shell "input tap 475 825"
 sleep 1
 adb shell "input tap 475 825"
 ```
+## To run
+Install node.js
+```
+npm install (if not done already)
+npm start
+```
