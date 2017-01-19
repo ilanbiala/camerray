@@ -12,6 +12,7 @@ html, .main {
 }
 .main {
   background:url(../images/header_bg.jpg) repeat-x left top;
+  padding-top: 40px;
 }
 .clr {
   clear:both;
@@ -167,7 +168,7 @@ border-bottom-left-radius: 5px;
 border-right: 1px solid  rgba(0,0,0,0.15);
 }
 
-.button:hover span, .button.active span {
+.button:hover letter-spacing, .button.active span {
   background-color:rgb(0,102,26);
   border-right: 1px solid  rgba(0,0,0,0.3);
 }
