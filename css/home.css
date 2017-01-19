@@ -1,0 +1,200 @@
+body {
+  margin:0;
+  padding:0;
+  width:100%;
+  color:#929292;
+  font:normal 12px/1.5em "Liberation sans", Arial, Helvetica, sans-serif;
+  background:#e7e7e7;
+}
+html, .main {
+  padding:0;
+  margin:0;
+}
+.main {
+  background:url(../images/header_bg.jpg) repeat-x left top;
+}
+.clr {
+  clear:both;
+  padding:0;
+  margin:0;
+  width:100%;
+  font-size:0;
+  line-height:0;
+}
+h2 {
+  margin:8px 0;
+  padding:8px 0;
+  font-size:25px;
+  font-weight:normal;
+  color:#3f3f3f;
+}
+p {
+  margin:8px 0;
+  padding:0 0 8px 0;
+}
+a {
+  color:#292927;
+  text-decoration:underline;
+}
+.header, .content, .menu_nav, .fbg, .footer, form, ol, ol li, ul, .content .mainbar, .content .sidebar {
+  margin:0;
+  padding:0;
+}
+.header {
+}
+.header_resize {
+  margin:0 auto;
+  padding:0;
+  width:960px;
+}
+.logo {
+  margin:0;
+  padding:0;
+  float:none;
+  height:114px;
+}
+h1 {
+  margin:0;
+  padding:26px 0 0;
+  font-size:60px;
+  font-weight:normal;
+  line-height:1.2em;
+  text-transform:none;
+  text-align:center;
+}
+h1 a, h1 a:hover {
+  color:#cdcdcd;
+  text-decoration:none;
+}
+h1 span {
+  color:#fff;
+}
+h1 small {
+  display:none;
+  margin:0;
+  font-size:18px;
+  font-weight:normal;
+  line-height:1.2em;
+  letter-spacing:normal;
+  text-transform:none;
+  color:#585858;
+}
+.menu_nav {
+  margin:0 auto;
+  padding:0;
+  height:62px;
+}
+.menu_nav ul {
+  list-style:none;
+  padding:0;
+  height:62px;
+  float:none;
+}
+.menu_nav ul li {
+  margin:0;
+  padding:0;
+  float:left;
+}
+.menu_nav ul li a {
+  display:block;
+  margin:0;
+  padding:22px 0 0;
+  width:192px;
+  height:40px;
+  font-size:20px;
+  line-height:26px;
+  font-weight:normal;
+  color:#fff;
+  text-decoration:none;
+  text-transform:none;
+  text-align:center;
+  background:none;
+}
+.menu_nav ul li.active a, .menu_nav ul li a:hover {
+  text-decoration:none;
+  color:#fff;
+  background:repeat-x left top;
+}
+a {
+  outline:none;
+}
+
+.wrapper {
+  padding: 30px 0 0 250px;
+}
+.button {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding-right: 30px;
+  padding-left: 70px;
+  position: relative;
+  background-color:rgb(41,127,184);
+  color:rgb(255,255,255);
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  
+  
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ff123852,Positive=true)";zoom:1;
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ff123852,Positive=true);
+
+  -moz-box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  -webkit-box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  box-shadow:0px 2px 2px rgba(0,0,0,0.2);
+  -ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true)";
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=2,Color=#33000000,Positive=true);
+}
+
+.button span {
+  position: absolute;
+  left: 0;
+  width: 50px;
+  background-color:rgba(0,0,0,0.5);
+  
+  -webkit-border-top-left-radius: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-bottomleft: 5px;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+border-right: 1px solid  rgba(0,0,0,0.15);
+}
+
+.button:hover span, .button.active span {
+  background-color:rgb(0,102,26);
+  border-right: 1px solid  rgba(0,0,0,0.3);
+}
+
+.button:active {
+  margin-top: 2px;
+  margin-bottom: 13px;
+
+  -moz-box-shadow:0px 1px 0px rgba(255,255,255,0.5);
+-webkit-box-shadow:0px 1px 0px rgba(255,255,255,0.5);
+box-shadow:0px 1px 0px rgba(255,255,255,0.5);
+-ms-filter:"progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ccffffff,Positive=true)";
+filter:progid:DXImageTransform.Microsoft.dropshadow(OffX=0,OffY=1,Color=#ccffffff,Positive=true);
+}
+
+.button.orange {
+  background: #FF7F00;
+}
+
+.button.purple {
+  background: #8e44ad;
+}
+
+.button.turquoise {
+  background: #1abc9c;
+}
+
+.button.red {
+  background: #e74c3c;
+}
