@@ -1,4 +1,5 @@
 import subprocess
+from multiprocessing import Pool
 
 devices = { 0 : 'ZX1B728VZG',
             1 : 'ZX1B72GWL8',
@@ -30,7 +31,7 @@ def captureImage(device):
 
 
 def moveFile(device):
-    filename = subprocess.check_output(adb(device, 'shell "ls /sdcard/DCIM/Camera/*" | head -1'), shell=True, universal_newlines=True).strip('\r\n ')
+    filename = subprocess.check_output(adb(device, 'shell "ls /sdcard/DCIM/Camera/*"'), shell=True, universal_newlines=True).split('\n',1)[0].strip('\r\n ')
     subprocess.run(adb(device, 'pull {} {}.jpg'.format(filename, device)), shell=True)
     subprocess.run(adb(device, 'shell "rm -rf /sdcard/DCIM/Camera/*"'), shell=True)
 
@@ -39,4 +40,6 @@ def captureAndCopy(device):
     moveFile(device)
 
 
-captureAndCopy(1);
+# captureAndCopy(1);
+
+Pool(len(devices)).map(captureAndCopy, range(len(devices)))
