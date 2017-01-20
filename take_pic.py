@@ -3,19 +3,19 @@ from multiprocessing import Pool
 
 devices = { 0 : 'ZX1B728VZG',
             1 : 'ZX1B72GWL8',
-            2 : '',
-            3 : '',
-            4 : '',
-            5 : '',
-            6 : '',
-            7 : '',
-            8 : '',
-            9 : '',
-            10 : '',
-            11 : '',
-            12 : '',
-            13 : '',
-            14 : '' }
+            2 : 'ZX1B72HB7J',
+            3 : 'ZX1B72D5G5',
+            4 : 'ZX1B72FXB6',
+            5 : 'ZX1B72KSTP',
+            6 : 'ZX1B72DQCX',
+            7 : 'ZX1B72LQN9',
+            8 : 'ZX1B72HQHW',
+            9 : 'ZX1PD22JKV',
+            10 : 'ZX1B72BMZP',
+            11 : 'ZX1B728WVP',
+            12 : 'ZX1B72D4P4',
+            13 : 'ZX1B72GW9H',
+            14 : 'ZX1B72FCDP' }
 
 def adb(device, command):
     return "adb -s {} {}".format(devices[device],command)
@@ -40,6 +40,7 @@ def captureAndCopy(device):
     moveFile(device)
 
 
-# captureAndCopy(1);
+captureAndCopy(14);
 
-Pool(len(devices)).map(captureAndCopy, range(len(devices)))
+# Pool(len(devices)).map(captureAndCopy, range(len(devices)))
+
