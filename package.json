@@ -1,0 +1,27 @@
+{
+  "name": "camerray",
+  "version": "1.0.0",
+  "description": "Build18 2017 project",
+  "main": "js/home.js",
+  "dependencies": {
+    "electron": "^1.4.14"
+  },
+  "devDependencies": {
+    "electron": "^1.4.15"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ".\\node_modules\\.bin\\electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ilanbiala/camerray.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ilanbiala/camerray/issues"
+  },
+  "homepage": "https://github.com/ilanbiala/camerray#readme"
+}

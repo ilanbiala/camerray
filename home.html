@@ -3,20 +3,12 @@
   <title>Camerray</title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link href="css/home.css" rel="stylesheet" type="text/css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link href="css/container.css" rel="stylesheet" type="text/css" />
   <script type="text/javascript" src="js/home.js"></script>
 
   <div class="main">
     <div class="header">
       <div class="header_resize">
-        <div class="menu_nav">
-          <ul>
-            <li class="active"><a href="index.html"><span>Home Page</span></a></li>
-            <li><a href="support.html"><span>Support</span></a></li>
-            <li><a href="about.html"><span>About Us</span></a></li>
-            <li><a href="contact.html"><span>Contact Us</span></a></li>
-          </ul>
-        </div>
         <div class="logo">
           <h1><a href="home.html">Camerray</a></h1>
         </div>
@@ -24,15 +16,33 @@
     </div>
   </div>
 </head>
+  
+<body onload="init()">
+  <div class="main-body">
+    <div class="container">
+      <div class="image-slider-wrapper">
+        <ul id="image_slider">
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/1.jpg"></li>
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/4.jpg"></li>
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/5.jpg"></li>
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/1.jpg"></li>
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/4.jpg"></li>
+          <li><img src="https://dl.dropboxusercontent.com/u/65639888/image/5.jpg"></li>
+        </ul>     
+        <div class="pager">
+        </div>
+      </div>
+    </div>
 
-<body>
-  <div class="wrapper">
-    <a href="#" class="button turquoise" onclick="takePhoto()"><span id="photo_taken">✗</span>Take Photos</a>
-  </div>
+    <div class="wrapper wleft">
+      <a href="#" class="button turquoise" onclick="takePhoto()"><span id="photo_taken">✗</span>Take Photos</a>
+    </div>
 
 
-  <div class="wrapper">
-    <a href="#" class="button turquoise" onclick="takeVideo()"><span id="video_taken">✗</span>Take Videos</a>
+    <div class="wrapper wright">
+      <a href="#" class="button turquoise" onclick="takeVideo()"><span id="video_taken">✗</span>Take Videos</a>
+    </div>
   </div>
 </body>
 </html>
+<!DOCTYPE html>
